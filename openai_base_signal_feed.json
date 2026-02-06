@@ -1,0 +1,55 @@
+[
+  {
+    "type": "function",
+    "function": {
+      "name": "get_signals",
+      "description": "Retrieves the latest smart money signals from the Base Signal Feed.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": []
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "get_token_score",
+      "description": "Retrieves the smart money score for a given token from the Base Signal Feed.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "token_address": {
+            "type": "string",
+            "description": "The contract address of the token on Base L2."
+          }
+        },
+        "required": ["token_address"]
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "get_new_pairs",
+      "description": "Retrieves recently detected new trading pairs on Base L2 from the Base Signal Feed.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": []
+      }
+    }
+  },
+  {
+    "type": "function",
+    "function": {
+      "name": "check_health",
+      "description": "Checks the health status of the Base Signal Feed API.",
+      "parameters": {
+        "type": "object",
+        "properties": {},
+        "required": []
+      }
+    }
+  }
+]
